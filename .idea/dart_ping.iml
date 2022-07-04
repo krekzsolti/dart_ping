@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping_ios/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping_ios/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping_ios/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping_ios/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dart_ping_ios/example/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+  </component>
+</module>

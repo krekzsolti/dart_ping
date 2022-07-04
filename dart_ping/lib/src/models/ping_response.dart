@@ -17,6 +17,22 @@ class PingResponse {
   /// IP Address of the target
   final String? ip;
 
+  PingResponse.fromMap(Map map)
+      : seq = map['seq'],
+        ttl = map['ttl'],
+        time = map['time'],
+        ip = map['ip'];
+
+  Map toMap(){
+    return{
+      'seq' : seq,
+      'ttl' : ttl,
+      'time' : time,
+      'ip' : ip,
+    };
+  }
+
+
   @override
   String toString() {
     final buff = StringBuffer('PingResponse(seq:$seq');

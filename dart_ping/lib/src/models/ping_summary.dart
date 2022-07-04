@@ -23,6 +23,21 @@ class PingSummary {
   /// All errors that occurred during the ping process
   late final List<PingError> errors;
 
+  PingSummary.fromMap(Map map)
+      : transmitted = map['transmitted'],
+        received = map['received'],
+        time = map['time'],
+        errors = PingError.fromMap(map['errors']) as List<PingError>;
+
+  Map toMap(){
+    return{
+      'transmitted' : transmitted,
+      'received' : received,
+      'time' : time,
+      'errors' : errors.toList(),
+    };
+  }
+
   @override
   String toString() {
     var str = 'PingSummary(transmitted:$transmitted, received:$received)';
@@ -34,4 +49,6 @@ class PingSummary {
     }
     return str;
   }
+
+
 }

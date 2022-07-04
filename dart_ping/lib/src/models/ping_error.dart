@@ -5,6 +5,18 @@ class PingError {
   final ErrorType error;
   final String? message;
 
+
+  PingError.fromMap(Map map)
+      : message = map['message'],
+        error = map['error'];
+
+  Map toMap(){
+    return{
+      'message' : message,
+      'error' : error,
+    };
+  }
+
   String get _errorStr =>
       error.toString().substring(error.toString().indexOf('.') + 1);
 
