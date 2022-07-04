@@ -1,4 +1,4 @@
-name: dart_ping
+name: dart_ping_changed
 description: Multi-platform network ping utility for native desktop and android applications.
 version: 6.1.2
 homepage: https://github.com/point-source/dart_ping
